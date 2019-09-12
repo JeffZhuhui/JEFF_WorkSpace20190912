@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{00cb5eac-b94c-4f7b-89bb-b8b458bc517c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\json">
+      <UniqueIdentifier>{880defee-b087-4749-a237-500bfa958b64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="policymgr">
+      <UniqueIdentifier>{a47db256-8e7f-4fa6-a1ee-67e632c16e64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserAttr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\microtest.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\nanodbc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewMetaData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterCondition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Policy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\tool.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="json\autolink.h">
+      <Filter>include\json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\config.h">
+      <Filter>include\json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\features.h">
+      <Filter>include\json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\forwards.h">
+      <Filter>include\json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.h">
+      <Filter>include\json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\reader.h">
+      <Filter>include\json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\value.h">
+      <Filter>include\json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\writer.h">
+      <Filter>include\json</Filter>
+    </ClInclude>
+    <ClInclude Include="policymgr\include\CCLoginHelper.h">
+      <Filter>policymgr</Filter>
+    </ClInclude>
+    <ClInclude Include="policymgr\include\CCPolicyHelper.h">
+      <Filter>policymgr</Filter>
+    </ClInclude>
+    <ClInclude Include="policymgr\include\exceptionhandle.h">
+      <Filter>policymgr</Filter>
+    </ClInclude>
+    <ClInclude Include="policymgr\include\log.h">
+      <Filter>policymgr</Filter>
+    </ClInclude>
+    <ClInclude Include="policymgr\include\NXLHttpClient.h">
+      <Filter>policymgr</Filter>
+    </ClInclude>
+    <ClInclude Include="policymgr\include\root_certificates.hpp">
+      <Filter>policymgr</Filter>
+    </ClInclude>
+    <ClInclude Include="config\config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserAttr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\nanodbc.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewMetaData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FilterCondition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Policy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\tool.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="policymgr\src\CCLoginHelper.cpp">
+      <Filter>policymgr</Filter>
+    </ClCompile>
+    <ClCompile Include="policymgr\src\CCPolicyHelper.cpp">
+      <Filter>policymgr</Filter>
+    </ClCompile>
+    <ClCompile Include="policymgr\src\exceptionhandle.cpp">
+      <Filter>policymgr</Filter>
+    </ClCompile>
+    <ClCompile Include="policymgr\src\log.cpp">
+      <Filter>policymgr</Filter>
+    </ClCompile>
+    <ClCompile Include="policymgr\src\NXLHttpClient.cpp">
+      <Filter>policymgr</Filter>
+    </ClCompile>
+    <ClCompile Include="collect_policys.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="collect_users.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="collect_view_metadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="update_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config\config.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

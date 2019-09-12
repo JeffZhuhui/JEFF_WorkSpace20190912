@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.10)
+# We cannot tolerate most warnings.
+set(CMAKE_CXX_FLAGS "-fPIC -Wall -pedantic ${CMAKE_CXX_FLAGS}")
+include_directories(./include)
+include_directories(../commonlib/include)
+aux_source_directory(./src SRCS)
+add_library(policymgr SHARED ${SRCS})
+target_link_libraries(policymgr pthread)
+target_link_libraries(policymgr ssl)
+target_link_libraries(policymgr crypto)
+target_link_libraries(policymgr boost_system)
