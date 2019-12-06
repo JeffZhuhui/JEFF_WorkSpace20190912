@@ -1,0 +1,8 @@
+2019-12-03 10:36:23.242433|trace|DllMain DLL_PROCESS_ATTACH:8540
+2019-12-03 10:36:23.242433|trace|MyDisp_Wrok::Init _pBaseAddrDW=00007FF770FB0000
+2019-12-03 10:36:23.273682|trace|CMySqldbLib::AddedHook load libSQLDBCHDB Success.
+2019-12-03 10:36:23.304931|trace|CMySqldbLib::_SQLDBC_PreparedStatement_prepare_1_Old=00007FFB0CEF0120
+2019-12-03 10:36:23.304931|trace|CMySqldbLib::_SQLDBC_PreparedStatement_prepare_2_Old=00007FFB0CEF0180
+2019-12-03 10:36:23.304931|trace|CMySqldbLib::_SQLDBC_PreparedStatement_prepare_3_Old=00007FFB0CEF01E0
+2019-12-03 10:36:23.304931|trace|CMySqldbLib::_SQLDBC_Statement_execute_1_Old=00007FFB0CEF0240
+

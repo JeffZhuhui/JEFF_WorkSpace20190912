@@ -1,0 +1,93 @@
+https://help.sap.com/doc/4fe29514fd584807ac9f2a04f6754767/2.0.02/en-us/20fcf24075191014a89e9dc7b8408b26.html
+
+SAP HANA SYNTAX
+
+<select_statement> ::= 
+ [<with_clause>] <subquery> [ <for_update> | <time_travel> ] [<hint_clause>] 
+ | [<with_clause>] ( <subquery> ) [ <for_update> | <for_xml> | <time_travel> ] [<hint_clause>]
+
+
+ <select_list> ::= <select_item>[{, <select_item>}... ]
+
+<select_item> ::= 
+ [<table_name>.]{<asterisk> | <expression>} [ AS <column_alias> ]
+
+<table_name> ::= [[<database_name>.]<schema_name>.]<identifier>
+
+<schema_name> ::= <unicode_name>
+
+<column_alias> ::= <identifier>
+
+<asterisk> ::= *
+ 
+ 
+ 
+ 针对mask语法部分
+ select_statement ::= <subquery>
+ 
+ <subquery> ::= <select_clause> <from_clause> [<where_clause>]  [<group_by_clause>]  [<having_clause>] 
+ [<set_operator> <subquery> [{, <set_operator> <subquery>}...]]
+ [<order_by_clause>] 
+ [<limit>] 
+ 
+ <select_clause> ::=  SELECT [TOP <unsigned_integer>] [ ALL | DISTINCT ] <select_list>
+ 
+ <select_list> ::= <select_item>[{, <select_item>}... ]
+
+<select_item> ::=  [<table_name>.] {<asterisk> | <expression>} [ AS <column_alias> ]
+
+<table_name> ::= [[<database_name>.]<schema_name>.]<identifier>
+
+<schema_name> ::= <unicode_name>
+
+<column_alias> ::= <identifier>
+
+<asterisk> ::= *
+
+
+<from_clause> ::= FROM <expression> [{, <expression>}...]
+
+<expression> ::= 
+ <table_ref>  
+ | <subquery>  
+ | <joined_table> 
+ | <collection_derived_table>
+ | <associated_table_expression>
+ | <function_reference>
+ | <JSON_collection_table>
+ | :<table_variable>
+ 
+ <table_ref> ::= <table_name> [ <partition_restriction> ] [ [AS] <table_alias> ] [<tablesample_clause>]
+ 
+ 
+ <partition_restriction> ::= PARTITION ( <partition_number> [{, <partition_number>}...] )
+
+<partition_number> ::= <unsigned_integer>
+
+<table_alias> ::= <identifier>
+
+
+<tablesample_clause> ::=
+ TABLESAMPLE [BERNOULLI | SYSTEM] (<sample_size>)
+
+<sample_size> ::= <exact_numeric_literal>
+
+
+<joined_table> ::= 
+ <table> [<join_type>] JOIN <table> ON <predicate>
+ | <table> CROSS JOIN <table> 
+ 
+ 
+ <join_type> ::= 
+ INNER  | { LEFT | RIGHT | FULL } [OUTER]
+ 
+ 
+ <limit> ::= 
+ LIMIT <unsigned_integer> [ OFFSET <unsigned_integer> ]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
